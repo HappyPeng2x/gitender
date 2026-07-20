@@ -20,6 +20,10 @@ translations/{lang}/{shard}/{seq}.json  per language: glosses per sense, example
 `shard = seq // 10000`, `seq` is the JMdict sequence number (`Entry.source_key`) -- files line up 1:1
 with `gitmdict`'s own sharding, by design.
 
+Rendered HTML dictionary cards built from this data live in the separate
+[gitenderml](https://github.com/HappyPeng2x/gitenderml) repository (kept apart because the rendered HTML
+roughly doubles the total size).
+
 This repository is regenerated and pushed automatically by SumatoraIndex's monthly release workflow.
 Manual edits here will be overwritten on the next sync.
 
